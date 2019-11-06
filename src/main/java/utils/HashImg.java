@@ -11,7 +11,7 @@ import java.awt.image.BufferedImage;
 public class HashImg {
 
     //获取图片的平均灰度值
-    public static double getAverage(BufferedImage bi) {
+    private static double getAverage(BufferedImage bi) {
         double total = 0d;
         int weight = bi.getWidth();
         int height = bi.getHeight();

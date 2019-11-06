@@ -13,8 +13,6 @@ import java.io.*;
 
 public class PicUtil {
 
-    public final static String BASEPATH = "/Users/yundongjiutian/IdeaProjects/similar_picture/src/main/resources/pic/";
-
     public static BufferedImage getPicFromPath(String path) throws IOException {
         return ImageIO.read(new FileInputStream(new File(path)));
     }
@@ -40,17 +38,5 @@ public class PicUtil {
         graphics2D.dispose();
         return newbi;
     }
-
-    public static void main(String[] args) throws IOException {
-        BufferedImage bi = getPicFromPath(BASEPATH + "pic2.jpg");
-        BufferedImage bi2 = getPicFromPath(BASEPATH + "pic3.jpeg");
-        BufferedImage grey1 = greyful(zoomBySize(bi, 8, 8));
-        BufferedImage grey2 = greyful(zoomBySize(bi2, 8, 8));
-        byte[] average1 = HashImg.hash(grey1);
-        byte[] average2 = HashImg.hash(grey2);
-        System.out.println(HashImg.diff(average1, average2));
-    }
-
-
 
 }
