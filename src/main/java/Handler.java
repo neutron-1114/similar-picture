@@ -5,8 +5,8 @@ import java.awt.image.BufferedImage;
 import java.io.IOException;
 
 /**
- * @author tongzi
- * @data 2019-11-06 18:35
+ * @author jixnLbj
+ * @date 2019-11-06 18:35
  * @desc Handler
  **/
 
@@ -28,6 +28,9 @@ public class Handler {
         System.out.println(HashImg.diff(average1, average2));
     }
 
+    private static void method2(BufferedImage bi1, BufferedImage bi2) {
+
+    }
 
 
 }

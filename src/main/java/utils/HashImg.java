@@ -3,8 +3,8 @@ package utils;
 import java.awt.image.BufferedImage;
 
 /**
- * @author tongzi
- * @data 2019-11-05 16:52
+ * @author jixnLbj
+ * @date 2019-11-05 16:52
  * @desc 通过哈希计算图片相似
  **/
 

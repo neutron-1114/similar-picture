@@ -6,8 +6,8 @@ import java.awt.image.BufferedImage;
 import java.io.*;
 
 /**
- * @author tongzi
- * @data 2019-11-05 17:00
+ * @author jixnLbj
+ * @date 2019-11-05 17:00
  * @desc 图片处理
  **/
 
