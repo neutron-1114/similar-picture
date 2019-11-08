@@ -1,4 +1,5 @@
 import utils.HashImg;
+import utils.HistogramImg;
 import utils.PicUtil;
 
 import java.awt.image.BufferedImage;
@@ -17,7 +18,7 @@ public class Handler {
     public static void main(String[] args) throws IOException {
         BufferedImage bi = PicUtil.getPicFromPath(BASEPATH + "pic2.jpg");
         BufferedImage bi2 = PicUtil.getPicFromPath(BASEPATH + "pic3.jpeg");
-        method1(bi, bi2);
+        method2(bi, bi2);
     }
 
     private static void method1(BufferedImage bi1, BufferedImage bi2) {
@@ -29,7 +30,9 @@ public class Handler {
     }
 
     private static void method2(BufferedImage bi1, BufferedImage bi2) {
-
+        int[] histogram1 = HistogramImg.getHistogram(bi1);
+        int[] histogram2 = HistogramImg.getHistogram(bi2);
+        System.out.println(HistogramImg.calculate(histogram1, histogram2));
     }
 
 
